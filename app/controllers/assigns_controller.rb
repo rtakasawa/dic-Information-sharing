@@ -38,7 +38,7 @@ class AssignsController < ApplicationController
         I18n.t('views.messages.cannot_delete_member_4_some_reason')
       end
     else
-      puts "削除する権限がありません"
+      I18n.t('views.messages.no_authority')
     end
   end
 
