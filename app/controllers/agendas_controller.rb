@@ -21,6 +21,10 @@ class AgendasController < ApplicationController
     end
   end
 
+  def destroy
+    raise
+  end
+
   private
 
   def set_agenda
