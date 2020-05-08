@@ -32,10 +32,9 @@
           <li class="nav-item has-treeview menu-open">
             <span class="nav-link">
               <i class="fa fa-circle-o nav-icon"></i>
-                <%= agenda.title %>
-                <%= link_to 'Destroy', agenda_path(agenda), class: 'btn btn-default' ,method: :delete, data: { confirm: 'Are you sure?' }%>
-                <%#= button_to 'Destroy', agenda_path(agenda), method: :delete, data: { confirm: 'Are you sure?' }%>
-                <i class="right fa fa-angle-left"></i>
+              <%= agenda.title %>
+              <%= link_to 'Destroy', agenda_path(agenda), class: 'btn btn-default' ,method: :delete, data: { confirm: 'Are you sure?' }%>
+              <i class="right fa fa-angle-left"></i>
             </span>
             <ul class="nav nav-treeview" style="display: block;">
               <% agenda.articles.each do |article| %>
