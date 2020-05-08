@@ -22,8 +22,7 @@ class AgendasController < ApplicationController
   end
 
   def destroy
-    binding.irb
-    if current_user.id == @agenda.user.id || current_user.is == @agenda.team.owner.id
+    if current_user.id == @agenda.user.id || current_user.id == @agenda.team.owner.id
       @agenda.destroy
       redirect_to dashboard_url, notice: I18n.t('views.messages.delete_agenda')
     else
