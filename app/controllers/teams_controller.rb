@@ -8,6 +8,7 @@ class TeamsController < ApplicationController
   end
 
   def show
+    binding.irb
     @working_team = @team
     change_keep_team(current_user, @team)
   end
